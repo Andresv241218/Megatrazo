@@ -1,0 +1,386 @@
+/*=========================================
+                HERO
+=========================================*/
+
+.hero{
+
+    position: relative;
+
+    height: 100vh;
+
+    min-height: 750px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+}
+
+/*=========================================
+            SUBTÍTULO HERO
+=========================================*/
+
+.hero-subtitle{
+
+    color: rgba(255,255,255,.92);
+
+    font-size: clamp(1.3rem,2vw,2rem);
+
+    font-weight: 400;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+
+}
+
+/*=========================================
+                VIDEO
+=========================================*/
+
+.hero-video{
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 1;
+
+}
+
+
+/*=========================================
+                OVERLAY
+=========================================*/
+
+.hero-overlay{
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        100deg,
+        rgba(0,0,0,.72) 0%,
+        rgba(0,0,0,.55) 35%,
+        rgba(0,0,0,.35) 70%,
+        rgba(0,0,0,.45) 100%
+    );
+
+    z-index: 2;
+
+}
+
+
+/*=========================================
+            CONTENIDO
+=========================================*/
+
+.hero .container{
+
+    position: relative;
+
+    z-index: 3;
+
+}
+
+.hero-content{
+
+    max-width: 700px;
+
+    color: var(--white);
+
+}
+
+
+/*=========================================
+                BADGE
+=========================================*/
+
+.hero-badge{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 22px;
+
+    margin-bottom: 28px;
+
+    border-radius: 50px;
+
+    background: rgba(255,255,255,.15);
+
+    backdrop-filter: blur(14px);
+
+    border: 1px solid rgba(255,255,255,.20);
+
+    color: var(--white);
+
+    font-size: .95rem;
+
+    font-weight: 500;
+
+}
+
+.hero-badge i{
+
+    color: var(--primary-light);
+
+}
+
+
+/*=========================================
+                TITULO
+=========================================*/
+
+.hero h1{
+
+    color: var(--white);
+
+    font-size: clamp(4rem,7vw,6rem);
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 12px;
+
+}
+.hero h1 span{
+
+    color: var(--primary-light);
+
+}
+
+
+/*=========================================
+            DESCRIPCIÓN
+=========================================*/
+
+.hero p{
+
+    color: rgba(255,255,255,.88);
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+    max-width: 620px;
+
+    margin-bottom: 40px;
+
+}
+
+
+/*=========================================
+                BOTONES
+=========================================*/
+
+.hero-buttons{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/*=========================================
+        BOTÓN SECUNDARIO
+=========================================*/
+
+.btn-secondary{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 15px 30px;
+
+    border: 2px solid rgba(255,255,255,.85);
+
+    border-radius: var(--radius);
+
+    color: var(--white);
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+}
+
+.btn-secondary:hover{
+
+    background: var(--white);
+
+    color: var(--text);
+
+}
+
+
+/*=========================================
+            SCROLL INDICATOR
+=========================================*/
+
+.scroll-indicator{
+
+    position: absolute;
+
+    bottom: 35px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 5;
+
+    color: var(--white);
+
+    font-size: 2rem;
+
+    animation: scrollDown 2s infinite;
+
+}
+
+@keyframes scrollDown{
+
+    0%{
+
+        transform: translate(-50%,0);
+
+        opacity:0;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform: translate(-50%,15px);
+
+        opacity:0;
+
+    }
+
+}
+/*=========================================
+            NOSOTROS
+=========================================*/
+/*=========================================
+            HERO INTERNO
+=========================================*/
+
+.page-hero{
+
+    position:relative;
+
+    width:100%;
+
+    height:420px;
+
+    overflow:hidden;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-size:cover;
+
+    animation:heroZoom 12s ease-in-out infinite alternate;
+
+}
+
+.hero-nosotros{
+
+    background-image:url(../img/bannernosotros.png);
+
+}
+
+.page-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.20);
+
+}
+@keyframes heroZoom{
+
+    from{
+
+        background-size:100%;
+
+    }
+
+    to{
+
+        background-size:108%;
+
+    }
+
+}
+
+/*=========================================
+            HERO INTERNO
+=========================================*/
+
+.page-hero2{
+
+    position:relative;
+
+    width:100%;
+
+    height:420px;
+
+    overflow:hidden;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-size:cover;
+
+    animation:heroZoom 12s ease-in-out infinite alternate;    
+}
+
+.hero-soluciones{
+
+    background-image:url(../img/bannerservicios.jpg);
+
+}
+
+.page-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.20);
+
+}

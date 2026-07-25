@@ -1,0 +1,366 @@
+/*=========================================
+        NUESTRAS SOLUCIONES
+=========================================*/
+
+.solutions-intro{
+
+    background:var(--white);
+
+}
+
+.solutions-intro p{
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+/*=========================================
+      CATEGORÍAS DE SOLUCIONES
+=========================================*/
+
+.solution-categories{
+
+    background:#f8fafc;
+
+}
+
+.solution-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:40px 30px;
+
+    height:100%;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.06);
+
+}
+
+.solution-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+}
+
+.solution-card i{
+
+    width:80px;
+
+    height:80px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    background:rgba(46,125,50,.12);
+
+    color:#6FA11A;
+
+    font-size:2rem;
+
+}
+.solution-card h3{
+
+    font-size:1.4rem;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.solution-card p{
+
+    color:#666;
+
+    margin:0;
+
+    line-height:1.8;
+
+}
+
+/*=========================================
+        ¿CÓMO TRABAJAMOS?
+=========================================*/
+
+.work-process{
+
+    background:#ffffff;
+
+}
+
+.process-card{
+
+    position:relative;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:45px 30px;
+
+    text-align:center;
+
+    height:100%;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.process-number{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    font-size:.95rem;
+
+    font-weight:700;
+
+    color:#6FA11A;
+
+    opacity:.35;
+
+}
+
+.process-card i{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(46,125,50,.12);
+
+    color:#6FA11A;
+
+    font-size:2rem;
+
+}
+
+.process-card h3{
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.process-card p{
+
+    margin:0;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/*=========================================
+        SECTORES QUE ATENDEMOS
+=========================================*/
+
+.industries{
+
+    background:#f8fafc;
+
+}
+
+.industry-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px 30px;
+
+    height:100%;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.industry-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.industry-card i{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(46,125,50,.12);
+
+    color:#6FA11A;
+
+    font-size:2rem;
+
+}
+
+.industry-card h3{
+
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.industry-card p{
+
+    margin:0;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/*=========================================
+        PREGUNTAS FRECUENTES
+=========================================*/
+
+.faq{
+
+    background:#ffffff;
+
+}
+
+.faq-accordion{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.accordion-item{
+
+    border:none;
+
+    border-radius:18px !important;
+
+    margin-bottom:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.accordion-button{
+
+    font-weight:600;
+
+    font-size:1.05rem;
+
+    padding:22px 25px;
+
+    background:#fff;
+
+}
+
+.accordion-button:not(.collapsed){
+
+    background:rgba(46,125,50,.10);
+
+    color:#6FA11A;
+
+    box-shadow:none;
+
+}
+
+.accordion-button:focus{
+
+    box-shadow:none;
+
+    border:none;
+
+}
+
+.accordion-body{
+
+    padding:20px 25px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:.8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}

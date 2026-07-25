@@ -1,0 +1,340 @@
+/*=========================================
+        ANIMACIÓN ABOUT
+=========================================*/
+
+.about{
+
+    opacity: 0;
+
+    transform: translateY(50px);
+
+    transition: opacity .8s ease,
+                transform .8s ease;
+
+}
+
+.about.show{
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+/*=========================================
+        SERVICES
+=========================================*/
+
+.services{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:opacity .8s ease,
+               transform .8s ease;
+
+}
+
+.services.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=========================================
+        WHY US
+=========================================*/
+
+.why-us{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:opacity .8s ease,
+               transform .8s ease;
+
+}
+
+.why-us.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=========================================
+            PROCESS
+=========================================*/
+
+.process{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:opacity .8s ease,
+               transform .8s ease;
+
+}
+
+.process.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=========================================
+            CLIENTS
+=========================================*/
+
+.clients{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:opacity .8s ease,
+               transform .8s ease;
+
+}
+
+.clients.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=========================================
+                CTA
+=========================================*/
+
+.cta{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:opacity .8s ease,
+               transform .8s ease;
+
+}
+
+.cta.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=========================================
+                FOOTER
+=========================================*/
+
+.footer{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:opacity .8s ease,
+               transform .8s ease;
+
+}
+
+.footer.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.sub-footer{
+
+    opacity:0;
+
+    transition:opacity 1s ease;
+
+}
+
+.sub-footer.show{
+
+    opacity:1;
+
+}
+/*=========================================
+            NOSOTROS
+=========================================*/
+/*=========================================
+            HERO INTERNO
+=========================================*/
+
+.page-subtitle,
+.page-hero-content h1,
+.page-hero-content p,
+.breadcrumb-custom{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:.8s ease;
+
+}
+
+.page-subtitle.show,
+.page-hero-content h1.show,
+.page-hero-content p.show,
+.breadcrumb-custom.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=========================================
+            ¿QUIÉNES SOMOS?
+=========================================*/
+
+.who-content,
+.who-image{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s ease;
+
+}
+
+.who-content.show,
+.who-image.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=========================================
+            NUESTRA HISTORIA
+=========================================*/
+
+.history-item{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s ease;
+
+}
+
+.history-item.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=========================================
+            NUESTRA ESENCIA
+=========================================*/
+
+.essence-card{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s ease;
+
+}
+
+.essence-card.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=========================================
+            NUESTROS VALORES
+=========================================*/
+
+.value-card{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s ease;
+
+}
+
+.value-card.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=========================================
+        ¿POR QUÉ ELEGIR MEGATRAZO?
+=========================================*/
+
+.why-card{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s ease;
+
+}
+
+.why-card.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=========================================
+        NUESTRO COMPROMISO
+=========================================*/
+
+.commitment-content,
+.commitment-image{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s ease;
+
+}
+
+.commitment-content.show,
+.commitment-image.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}

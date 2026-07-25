@@ -1,0 +1,312 @@
+/*=========================================
+                NAVBAR
+=========================================*/
+
+.header{
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    z-index: 9999;
+
+}
+
+
+/*=========================================
+            NAVBAR
+=========================================*/
+
+.navbar{
+
+    padding: 20px 0;
+
+    transition: var(--transition);
+
+    background: transparent;
+
+}
+
+.navbar.scrolled{
+
+    background: #afe05a;
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow: var(--shadow);
+
+    padding: 14px 0;
+
+}
+
+
+/*=========================================
+                LOGO
+=========================================*/
+
+.navbar-brand{
+
+    padding: 0;
+
+}
+
+.navbar-brand img{
+
+    height: 30px;
+
+    transition: var(--transition);
+
+}
+
+.navbar-brand:hover img{
+
+    transform: scale(1.05);
+
+}
+
+
+/*=========================================
+                MENU
+=========================================*/
+
+.navbar-nav{
+
+    gap: 18px;
+
+}
+
+.nav-link{
+
+    position: relative;
+
+    color: var(--white);
+
+    font-weight: 500;
+
+    padding: 0 !important;
+
+    transition: var(--transition);
+
+}
+
+.navbar.scrolled .nav-link{
+
+    color: var(--text);
+
+}
+
+.nav-link:hover{
+
+    color: var(--primary);
+
+}
+
+
+/*=========================================
+        LINEA ANIMADA
+=========================================*/
+
+.nav-link::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -8px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--primary);
+
+    transition: var(--transition);
+
+}
+
+.nav-link:hover::after,
+
+.nav-link.active::after{
+
+    width: 100%;
+
+}
+
+
+/*=========================================
+            BOTON COTIZAR
+=========================================*/
+
+.btn-navbar{
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 13px 28px;
+
+    background: var(--primary);
+
+    color: var(--white);
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+    box-shadow: var(--shadow-sm);
+
+    margin-left: 28px;
+
+}
+
+.btn-navbar:hover{
+
+    background: var(--primary-dark);
+
+    color: var(--white);
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+/*=========================================
+            HAMBURGUESA
+=========================================*/
+
+.navbar-toggler{
+
+    border: none;
+
+    padding: 0;
+
+    color: var(--white);
+
+    font-size: 2rem;
+
+    transition: var(--transition);
+
+}
+
+.navbar-toggler:focus{
+
+    box-shadow: none;
+
+}
+
+.navbar.scrolled .navbar-toggler{
+
+    color: var(--text);
+
+}
+
+
+/*=========================================
+            OFFCANVAS
+=========================================*/
+
+.offcanvas{
+
+    width: 320px;
+
+    background: var(--surface);
+
+}
+
+.offcanvas-header{
+
+    padding: 25px;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+.offcanvas-body{
+
+    padding: 30px 25px;
+
+}
+
+
+/*=========================================
+            MENU MOVIL
+=========================================*/
+
+.mobile-menu{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+.mobile-menu li{
+
+    border-bottom: 1px solid var(--border);
+
+    padding-bottom: 18px;
+
+}
+
+.mobile-menu a{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    color: var(--text);
+
+    font-weight: 500;
+
+    transition: var(--transition);
+
+}
+
+.mobile-menu a:hover{
+
+    color: var(--primary);
+
+    padding-left: 10px;
+
+}
+
+.mobile-menu i{
+
+    font-size: 1.2rem;
+
+    color: var(--primary);
+
+}
+
+
+/*=========================================
+        BOTON MOVIL
+=========================================*/
+
+.offcanvas .btn-navbar{
+
+    width: 100%;
+
+    margin-top: 35px;
+
+    border-radius: var(--radius);
+
+}

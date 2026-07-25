@@ -1,0 +1,413 @@
+/*=========================================
+            GOOGLE FONTS
+=========================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/*=========================================
+            VARIABLES GLOBALES
+=========================================*/
+
+:root{
+
+    /* COLORES CORPORATIVOS */
+
+    --primary: #6FA11A;
+    --primary-dark: #5A8C16;
+    --primary-light: #A7C96A;
+
+    /* FONDOS */
+
+    --white: #FFFFFF;
+    --background: #F7F8F5;
+    --surface: #FFFFFF;
+    --surface-alt: #F2F4EF;
+
+    /* TEXTOS */
+
+    --text: #2C2C2C;
+    --text-light: #666666;
+    --text-muted: #8A8A8A;
+
+    /* BORDES */
+
+    --border: #E5E7EB;
+
+    /* SOMBRAS */
+
+    --shadow-sm: 0 4px 15px rgba(0,0,0,.06);
+    --shadow: 0 10px 30px rgba(0,0,0,.08);
+    --shadow-lg: 0 18px 45px rgba(0,0,0,.15);
+
+    /* RADIOS */
+
+    --radius-sm: 10px;
+    --radius: 18px;
+    --radius-lg: 28px;
+
+    /* TRANSICIONES */
+
+    --transition: .35s ease;
+
+}
+
+
+/*=========================================
+                RESET
+=========================================*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:var(--background);
+    color:var(--text);
+    overflow-x:hidden;
+    line-height:1.6;
+
+}
+
+img{
+
+    max-width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+ul,
+ol{
+
+    list-style:none;
+    margin:0;
+    padding:0;
+
+}
+
+button{
+
+    border:none;
+    background:none;
+    cursor:pointer;
+    font-family:inherit;
+
+}
+
+input,
+textarea,
+select{
+
+    font-family:inherit;
+    outline:none;
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+
+/*=========================================
+            CONTENEDOR
+=========================================*/
+
+.container{
+
+    width:min(92%,1320px);
+    margin:auto;
+
+}
+
+
+/*=========================================
+            TIPOGRAFÍA
+=========================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    color:var(--text);
+    font-weight:700;
+    line-height:1.2;
+
+}
+
+h1{
+
+    font-size:clamp(2.8rem,6vw,5rem);
+
+}
+
+h2{
+
+    font-size:clamp(2.2rem,4vw,3.2rem);
+
+}
+
+h3{
+
+    font-size:1.5rem;
+
+}
+
+p{
+
+    color:var(--text-light);
+    line-height:1.8;
+    margin-bottom:0;
+
+}
+
+
+/*=========================================
+            BOTONES
+=========================================*/
+
+.btn-primary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    padding:15px 30px;
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    border-radius:var(--radius);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow);
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-4px);
+
+    color:var(--white);
+
+}
+
+.btn-secondary{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    padding:15px 30px;
+
+    border:2px solid var(--white);
+
+    color:var(--white);
+
+    border-radius:var(--radius);
+
+    transition:var(--transition);
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--white);
+
+    color:var(--text);
+
+}
+
+
+/*=========================================
+            SECCIONES
+=========================================*/
+
+section{
+
+    padding:100px 0;
+
+}
+
+
+/*=========================================
+        TITULO DE SECCIÓN
+=========================================*/
+
+.section-header{
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+}
+
+.section-header span{
+
+    display:inline-block;
+
+    margin-bottom:15px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+.section-header h2{
+
+    margin-bottom:20px;
+
+}
+
+.section-header p{
+
+    font-size:1.05rem;
+
+}
+
+
+/*=========================================
+            SELECCIÓN
+=========================================*/
+
+::selection{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+}
+
+
+/*=========================================
+            SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ECECEC;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/*=========================================
+        SECTION
+=========================================*/
+
+.section{
+
+    padding: 100px 0;
+
+}
+
+
+/*=========================================
+        SECTION HEADER
+=========================================*/
+
+.section-header{
+
+    max-width: 850px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+
+}
+
+.section-title-main{
+
+    font-size: clamp(2.8rem, 5vw, 4rem);
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    color: var(--text);
+
+    margin-bottom: 18px;
+
+}
+
+.section-subtitle{
+
+    font-size: 1.3rem;
+
+    font-weight: 500;
+
+    color: var(--primary);
+
+    margin-bottom: 20px;
+
+}
+
+.section-description{
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+    color: var(--text-light);
+
+}
