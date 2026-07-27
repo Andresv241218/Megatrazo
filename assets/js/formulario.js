@@ -60,12 +60,12 @@ formulario.addEventListener("submit", function (e) {
     let texto = `Hola, Megatrazo.%0A%0A`;
     texto += `Quisiera solicitar una cotización.%0A%0A`;
     texto += `👤 *Nombre:* ${nombre}%0A`;
-    texto += `📞 *Teléfono:* ${telefono}%0A`;
+    texto += `📱 *Teléfono:* ${telefono}%0A`;
     texto += `📧 *Correo:* ${correo}%0A`;
 
     if (empresa !== "") {
 
-        texto += `🏢 *Empresa:* ${empresa}%0A`;
+        texto += `🏬 *Empresa:* ${empresa}%0A`;
 
     }
 
